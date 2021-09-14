@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: certcheck-dp
+  labels:
+    component: certcheck
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: certcheck
+  template:
+    metadata:
+      labels:
+        component: certcheck
+    spec:
+      containers:
+        - name: certcheck
+          image: noveris-inf/certcheck:0.1.5

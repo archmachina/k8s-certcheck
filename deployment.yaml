@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
         - name: certcheck
-          image: noverisinf/certcheck:0.2.1
+          image: noverisinf/certcheck:0.2.2

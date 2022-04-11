@@ -1,1 +1,1 @@
-# k8s-certcheck
+# kustomize-certcheck
